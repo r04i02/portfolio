@@ -1,30 +1,45 @@
 /** @jsxImportSource @emotion/react */
 import { createRoot } from 'react-dom/client'
-import { styles } from './component/styles';
+import { Global, css } from '@emotion/react'
+import { styles } from './component/AboutMe/styles';
 
+import { AboutMe } from './component/AboutMe/AboutMe';
+import { MyName } from './component/MyName/MyName';
+import { ShowSkillCard } from './component/SkillCard/showSkillCard';
 
-import { AboutMe } from './component/AboutMe';
-import { MyName } from './component/MyName';
-
-// メインのレンダリング
 createRoot(document.getElementById('root')!).render(
   <App />
 )
 
-// アプリ全体
 function App() {
   return (
-    <div>
+    <>
+      {/* グローバルスタイルで html/body の余白をリセット */}
+      <Global
+        styles={css`
+          html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+          }
+
+          #root {
+            height: 100%;
+          }
+        `}
+      />
+
       <div css={styles.container}>
         <div css={styles.card}>
           <MyName />
         </div>
         <div css={styles.card}>
           <AboutMe />
+          <p>
+            <ShowSkillCard />
+          </p>
         </div> 
       </div>
-    </div>
+    </>
   )
 }
-
-
