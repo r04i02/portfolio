@@ -22,7 +22,7 @@ export const styles = {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('./../../public/IMG_4039.jpg');
+      background-image: url('https://media.discordapp.net/attachments/1243196434791010508/1383901988349149445/IMG_4039.jpg?ex=68507aa9&is=684f2929&hm=10eed0aab9e95420bffa66a7b25591ab0764fc2340def6ded36bed7b45c2452d&=&format=webp&width=2048&height=1260');
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
