@@ -1,6 +1,7 @@
 // styles.ts
 import { css } from '@emotion/react';
 
+
 export const styles = {
   container: css`
     position: relative;
@@ -29,11 +30,12 @@ export const styles = {
       z-index: -1;
     }
   `,
+
   card: css`
     background-color: #00000088;
-    padding: 40px;         /* 全方向の基本 padding */
-    padding-top: 16px;     /* ← 上方向だけ小さくする */
-    padding-bottom: 16px;  /* ← 下方向だけ小さくする */
+    padding: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-radius: 12px;
     max-width: 800px;
     width: 90%;
@@ -42,12 +44,43 @@ export const styles = {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    /* レスポンシブ調整 */
+    @media (max-width: 768px) {
+      padding: 24px;
+      border-radius: 10px;
+      max-width: 95%;
+    }
+
+    @media (max-width: 480px) {
+      padding: 16px;
+      gap: 12px;
+    }
   `,
+
   heading: css`
     font-size: 24px;
     margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   `,
+
   paragraph: css`
     margin: 8px 0;
+    font-size: 16px;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   `,
 };
