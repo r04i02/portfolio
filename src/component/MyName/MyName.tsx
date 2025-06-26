@@ -17,7 +17,6 @@ export function MyName() {
       <AccountCard
         service="GitHub"
         username="@igasa-K"
-        /* /Users/igasa_k/webDevelopment/portfolio/app/src/component/github-mark/github-mark-white.svgを参照 */
         logo="./github-mark/github-mark-white.svg" 
         textColor="#FFFFFF"
         bgColor="#00000040"
