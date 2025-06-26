@@ -4,12 +4,23 @@ import { styles } from '../SkillCard/styles';
 
 import proconImage from './../../../public/image1.jpg';
 import pckoImage from './../../../public/image0.jpg';
+import yokkaichiImage from './../../../public/image2.jpg';
 
 export function ShowAchievement(){
     return(
         <div css={styles.grid}>
+            <h2>制作物</h2>
+            <CardGrid
+                columns = {1}
+                cards={[
+                    {
+                        imageUrl: yokkaichiImage,
+                        linkUrl: 'https://drive.google.com/drive/folders/1_jgABi6MDEDnE7MXSlYjI4CoOvnFGRXg?usp=sharing',
+                        description: '四日市ハッカソン「SNCT3I」'
+                    },
+                ]}
+            />
             <h2>実績</h2>
-
             <CardGrid
                 columns = {2}
                 cards={[

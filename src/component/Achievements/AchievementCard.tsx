@@ -69,5 +69,5 @@ const overlayStyle = css`
 const descriptionStyle = css`
     color: white;
     font-size: 16px;
-    line-height: 0;
+    line-height: 0.75;
 `;

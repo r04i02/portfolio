@@ -6,6 +6,7 @@ import { styles } from './component/AboutMe/styles';
 import { AboutMe } from './component/AboutMe/AboutMe';
 import { MyName } from './component/MyName/MyName';
 import { ShowSkillCard } from './component/SkillCard/showSkillCard';
+
 import { ShowAchievement } from './component/Achievements/Achievements';
 
 createRoot(document.getElementById('root')!).render(
@@ -37,6 +38,7 @@ function App() {
         <div css={styles.card}>
           <AboutMe />
           <ShowSkillCard />
+          
           <ShowAchievement />
         </div> 
       </div>
